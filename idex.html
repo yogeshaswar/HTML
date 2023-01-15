@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+       
+</head>
+<body>
+    <button id="btnCounter">+</button>
+    <script>
+        let counter = 0;
+        const element = document.querySelector("#btnCounter");
+        function counterIncreament(){
+            counter = counter + 1;
+            console.log(counter);
+        }
+
+        element.addEventListener("click", counterIncreament, false)
+        
+    </script>
+</body>
+</html>
